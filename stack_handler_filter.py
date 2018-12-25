@@ -1,7 +1,6 @@
 import logging
 
 
-# handler filter
 def stderr_filter(record):
     if record.levelno >= logging.WARNING:
         return True

@@ -15,6 +15,7 @@
 
 
 ## Usage
+
 ```markdown
 // a new logger 
 
@@ -22,11 +23,11 @@ from stack_handler import stdout_handler, stderr_handler
 import logging
 from flask import Flask
 
-# init a logger
+// init a logger
 stack_logger = logging.getLogger('stack_logger')
 stack_logger.setLevel(logging.DEBUG)
 
-# add stdout_handler、stderr_handler to logger
+// add stdout_handler、stderr_handler to logger
 stack_logger.addHandler(stderr_handler)
 stack_logger.addHandler(stdout_handler)
 
@@ -54,3 +55,7 @@ output:
 {"timestamp": "2018-12-25T08:08:06.174206Z", "severity": "INFO", "message": "this is info"}
 {"timestamp": "2018-12-25T08:08:06.173621Z", "severity": "ERROR", "message": "this is error"}
 ```
+
+## Requirements
+
+- pip install python-json-logger
